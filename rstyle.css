@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(250, 86, 187, 0.7),rgba(34, 85, 179, 0.7)),url(image/indiaaa.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    /* list-style: none; */
+    display: inline-block;
+    padding: 8px 12px;
+    /* position: relative; */
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+/* haver effect  */
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f3de25;
+    display: block;
+    margin: auto;
+    transition: 0.9s;
+}
+.nav-links ul li:hover::after{
+    width:100%
+}
+/* haver effect */
+
+/* my project */
+.text-box{
+    width:90%;
+    color: rgb(254, 255, 251);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 50px;
+}
+/* my project */
+
+/* indian history */
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+/* indian history */
+
+/* campush part */
+
+
+
+.row{            /* this use for seprate the paragraph in three part  */
+    margin-top:5%;
+    display:flex;
+    justify-content: space-between;
+
+}
+
+
+.campus{
+    width:80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+
+}
+.campus-col img {
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{        /* this is for last pic and when cursor go over their than it blink */
+
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left:50%;
+    transform: translateX(-50%);
+    position:absolute;
+    transition: 0.5s;
+}
+.layer:hover h3{
+   bottom:49%;
+   opacity: 1;
+}
+
+/* campush part */
+#foot{
+    height: 100px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    background-image: url("image/indiaaa.jpg");
+    background-blend-mode: darken;
+}
